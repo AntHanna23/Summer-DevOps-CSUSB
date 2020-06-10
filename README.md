@@ -1,5 +1,5 @@
 # Summer-DevOps-CSUSB
-This repo holds the plan for the project being offered by California State University, San Bernardino to allow any displaced interns because of the Covid-19 pandemic complete requirements for there Scholarship for Service Commitment. This contain the week by week plan along with some documentation on how to complete the work. 
+This repo holds the plan for the project being offered by California State University, San Bernardino to allow any displaced interns because of the Covid-19 pandemic complete requirements for there Scholarship for Service Commitment. This contains the week by week plan along with some documentation on how to complete the work. 
 
 ## Overview
 This project focuses on learning how to build, test, deploy, and manage applications in a way that fits a modern Ops role. The growth of open-source scalable tools has been rapid and picked up quickly by many large organizations. New mindsets and technologies allow these large infrastructures to quickly develop and deploy tested applications and updates without down time. This project will specifically focus on learning some of the basics of these tools and practically implementing them. Using containerization, CI/CD, configuration management tools, and Kubernetes, we will build production ready applications with automated deployments.
