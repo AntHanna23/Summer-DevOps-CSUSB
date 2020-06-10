@@ -8,7 +8,7 @@ Today we are going to get set up to start learning basic docker fundamentals. La
 * Setting up VsCode and remote development?
 * What is Github and creating first Repo for Dockerfile?
 * Generating keys for Github
-* What are basic Docker commands used to start containers
+
 
 ## Set Up
 Where your machine runs is up to you. It needs to be a Linux machine (preferably Ubuntu) and cannot be WSL because docker will not work in that. Docker for Windows is an option but I am not comfortable with it so unless you are already experienced with it I would suggest to stay away from that. 
@@ -34,23 +34,7 @@ Name your key and place it in the .ssh file in your how directory. Now take the 
 
 This video gives a walk through if the instructions do not suffice
 
-## Docker Commands 
 
-Here are some Docker commands that we are going to quickly introduce so that we may continue onto Docker files next week.
-
-    docker login - prompts you to long into docker hub so that you can push and pull images from your account
-
-    docker start – Starts one or more stopped containers
-
-    docker stop – Stops one or more running containers
-
-    docker build – Builds an image form a Docker file
-
-    docker pull – Pulls an image or a repository from a registry
-
-    docker push – Pushes an image or a repository to a registry
-
-    docker exec – Runs a command in a run-time container
 
 
 
