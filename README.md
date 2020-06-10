@@ -23,4 +23,5 @@ This project focuses on learning how to build, test, deploy, and manage applicat
 # Weekly Breadown 
 
 
-[Week One: Intro To DevOps and Creating Our Environments](docs/week1)
+- [Week One: Intro To DevOps and Creating Our Environments](docs/week1)
+- [Week One: Docker Basics](docs/week2)
