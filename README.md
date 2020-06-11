@@ -24,4 +24,4 @@ This project focuses on learning how to build, test, deploy, and manage applicat
 
 
 - [Week One: Intro To DevOps and Creating Our Environments](docs/week1)
-- [Week One: Docker Basics](docs/week2)
+- [Week Two: Docker Basics](docs/week2)
