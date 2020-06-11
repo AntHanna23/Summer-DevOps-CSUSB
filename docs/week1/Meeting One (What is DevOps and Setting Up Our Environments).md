@@ -4,6 +4,9 @@ Today is going to be about giving a full and detailed overview of exactly what w
 
 ## Questions That Will Be Answered
 * What will be accomplished over the next 8 weeks?
+* Where is all the documentation
+* This is the first class so how can you help me?
+* Optional Fridays?
 * What is DevOps?
 * Why is DevOps better than the old way?
 * What do I need to start prepping to be successful?
