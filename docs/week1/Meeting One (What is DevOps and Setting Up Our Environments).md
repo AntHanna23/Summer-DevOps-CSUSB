@@ -10,6 +10,7 @@ Today is going to be about giving a full and detailed overview of exactly what w
 * What is DevOps?
 * Why is DevOps better than the old way?
 * What do I need to start prepping to be successful?
+* Get GCP emails set up?
 
 ### Presentation
 https://docs.google.com/presentation/d/1LmghfaVtdJi7CvDOG-ggf-3GpMkAgkJxYIthB-76JL4/edit?usp=sharing

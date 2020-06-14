@@ -42,7 +42,7 @@ COPY anthonyhanna.conf /etc/nginx/sites-enabled/
 ENTRYPOINT ./start.sh
 ```
 
-## Excercise One
+## Exercise One
 * Create a Docker file that has an SSH server running
 * Create a user with password that can be connected to
 * Install python3 
@@ -89,6 +89,35 @@ Now we can attach multiple containers to the same database allowing them to shar
 
 Notice how no new volume was when running this command. These databases will share the storage. 
 
+# Bind Mounts
+
+Bind Mounts are great for developing in docker and though they are not used in production in most cases they can come in handy so I will show a little of that here. Make a directory and use this Dockerfile along with an index.html.
+
+```
+From nginx:latest
+
+WORKDIR /usr/share/nginx/html
+
+COPY index.html index.html
+```
+    docker container run -d --name nginx-test -p 80:80 $(pwd):/usr/share/nginx/html nginx
+
+Now we can see changes live on the container. Open up two terminals and make a change to the current directory and see that this change happens in /usr/share/nginx/html in the container. This is great for local development.
+
+## Exercise Two
+* Create Nginx instance with bind mount
+* Make a new file and navigate to it in your browser
+
+### Optional Friday Project (Highly Encouraged)
+* Get GCP Set Up
+* Buy a Domain
+* Make a Basic Website with your skill and interested things about you (html5up.com)
+* Put it in a container 
+* Deploy and have your own website
+* I will be on all day Friday to help out as you guys do this 
+
+
+Next week we start Github/Gitlab/CI-CD
 
 
 
