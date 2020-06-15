@@ -4,7 +4,6 @@
 * What is Ansible?
 * Why is it needed and why is it becoming so popular now?
 * What is an Ansible playbook?
-* What is an Ansible role?
 * How do we connect to remote machines using Ansible?
 * What is an Ansible module?
 * Can I make my own modules?
