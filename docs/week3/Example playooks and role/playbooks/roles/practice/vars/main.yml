@@ -1,0 +1,9 @@
+---
+# vars file for practice
+packages:
+       - nginx 
+       - lolcat
+       - vim 
+       - git  
+
+hw: 'Hello World'

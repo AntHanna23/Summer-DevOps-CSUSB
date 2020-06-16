@@ -1,0 +1,28 @@
+---
+- name: update the machines
+  become: yes
+  package:
+      name: "*"
+      state: latest
+
+
+- name: Install packages
+  become: yes
+  package:
+    name: "{{ packages }}"
+    state: latest
+
+# - name: Ensure SSH Protocol is set to 2
+#   lineinfile:
+#     state: present
+#     dest: /etc/ssh/sshd_config
+#     regexp: '^Protocol'
+#     line: 'Protocol 2'
+#   notify: reload sshd
+
+- name: Template Test
+  template: 
+    src: Hello-World.j2
+    dest: ~/Hello-World.txt
+    mode: '0777'
+

@@ -1,0 +1,6 @@
+---
+# handlers file for practice
+- name: reload sshd
+  service:
+        name: ssh
+        state: restarted

@@ -1,0 +1,4 @@
+---
+- hosts: anthonyhanna.com
+  roles: 
+    - practice

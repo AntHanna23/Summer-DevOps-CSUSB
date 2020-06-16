@@ -1,0 +1,43 @@
+---
+- hosts: anthonyhanna.com
+  tasks:
+  - name: pull repo from git and update
+    git:
+      repo: git@gitlab.anthonyhanna.com:AntHanna23/personal-website.git
+      dest: /home/anthonyhanna/website/
+      accept_hostkey: yes
+      key_file: /home/anthonyhanna/.ssh/git
+      clone: yes
+
+  - name: install docker python module to be used to manage containers with ansible
+    become: true
+    apt: 
+      name: "{{ item }}"
+      state: latest
+    with_items:
+      - python-pip
+
+  - name: download pip packages
+    pip: 
+      name: docker-py
+      state: present
+ 
+  - name: build container from git repo
+    docker_image:
+      build: 
+        path: /home/anthonyhanna/website/
+      name: ajhanna/website
+      tag: latest 
+      force_source: yes
+
+      
+  - name: restart and deploy new container
+    docker_container:
+      name: anthony-website
+      image: ajhanna/website:latest
+      ports:
+        - 8080:80
+      restart: yes
+      restart_policy: unless-stopped
+
+  
