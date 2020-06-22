@@ -175,8 +175,9 @@ Ansible template for loop example
   This is the 2th variable
 ```
 
-## Exercise
+## Exercise 1 and Friday
 * Take 20 CIS Benchmarks and create tasks for them
 * Make a jinja2 template for a file
 * Use at least one conditional statement
 * Make this into a role
+
