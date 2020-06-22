@@ -1,5 +1,5 @@
 # Meeting Three(What is Docker and Fundamentals)
-Today is going to get us into the command line and running some Dcoker commands and learning some of the fundamental things that are needed to run docker effectively. We will also go through and do some excersizes to put som eof the things that we learn into practice. 
+Today is going to get us into the command line and running some Docker commands and learning some of the fundamental things that are needed to run docker effectively. We will also go through and do some excersizes to put som eof the things that we learn into practice. 
 
 ## Questions That Will Be Answered
 * What is the difference between a container and a VM?
