@@ -12,13 +12,13 @@
     name: "{{ packages }}"
     state: latest
 
-# - name: Ensure SSH Protocol is set to 2
-#   lineinfile:
-#     state: present
-#     dest: /etc/ssh/sshd_config
-#     regexp: '^Protocol'
-#     line: 'Protocol 2'
-#   notify: reload sshd
+- name: Ensure SSH Protocol is set to 2
+  lineinfile:
+     state: present
+     dest: /etc/ssh/sshd_config
+     regexp: '^Protocol'
+     line: 'Protocol 2'
+  notify: reload sshd
 
 - name: Template Test
   template: 
