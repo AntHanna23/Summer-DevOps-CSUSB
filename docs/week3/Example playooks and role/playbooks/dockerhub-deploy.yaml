@@ -1,0 +1,38 @@
+---
+- hosts: project.anthonyhanna.com
+  become: yes 
+  tasks:
+  - name: install docker-py libraries 
+    apt:
+      name: "{{ item }}"
+      state: latest
+    with_items:
+      - python-pip
+      - python-docker 
+
+  - name: download pip package
+    pip: 
+      name: docker-py
+      state: present
+
+  - name: pull the docker image
+    docker_image: 
+      name: ajhanna/website
+      source: pull
+
+  - name: stop website container from running 
+    docker_container:
+      name: anthony-website
+      state: stopped
+    ignore_errors: yes
+
+  - name: deploy new containers 
+    docker_container:
+      name: anthony-website
+      image: ajhanna/website:latest
+      ports:
+        - 8080:80
+      restart: yes
+      restart_policy: unless-stopped
+  
+  
