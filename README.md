@@ -15,7 +15,6 @@ This project focuses on learning how to build, test, deploy, and manage applicat
 
 ## Contact Information
 * Email: ahanna@anthonyhanna.com
-* Phone Number: 619-654-0620 (Call/Text)
 * Hours Available: Anytime Monday-Friday
 * Email Me for Discord Invitation
 
